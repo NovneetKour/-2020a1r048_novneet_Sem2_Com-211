@@ -36,6 +36,7 @@ int pop(struct stack *stack)
    if (stack->size == 0)
    {
       printf("stack is empty");
+      return 0;
    }
    else
    {
