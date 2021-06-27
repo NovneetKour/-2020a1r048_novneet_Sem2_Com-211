@@ -34,7 +34,7 @@ int peek(struct stack *stack)
 }
 int isEmpty(struct stack *stack) // function to check if the stack is empty or not
 {
-    if (stack->suze == 0)
+    if (stack->size == 0)
     {
         return 1;
     }
