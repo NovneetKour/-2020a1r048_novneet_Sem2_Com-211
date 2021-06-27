@@ -32,12 +32,24 @@ int peek(struct stack *stack)
       return *(stack->data + (stack->size - 1)); //returning the top of the element.
    } 
 }
+int isEmpty(struct stack *stack) // function to check if the stack is empty or not
+{
+    if (stack->suze == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
 int pop(struct stack *stack)
 {
-   if (stack->size == 0)
+   if (isEmpty(stack)
    {
       printf("stack is empty");
-      return 0;
+      return Null
    }
    else
    {
